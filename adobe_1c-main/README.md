@@ -1,4 +1,7 @@
-
+# Docker command
+docker  -e 
+ADOBE_EMBED_API_KEY= xxxx -e LLM_PROVIDER=gemini -e 
+GEMINI_MODEL=gemini-2.5-flash -e GOOGLE_API_KEY=yyyyy -p 8080:8080 yourimageidentifier
 # Demo Video
 ### here is the demo video of the project
 
