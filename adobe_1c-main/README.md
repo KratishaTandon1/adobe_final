@@ -1,3 +1,11 @@
+
+# Demo Video
+### here is the demo video of the project
+
+https://youtu.be/XEmU8Nl5gr8?si=36tS8E_er9kRkeTn
+
+
+
 # PDF Viewer Application with Adobe Embed API + Intelligent Document Analysis
 
 A full stack PDF viewer application with React frontend and FastAPI backend, featuring Adobe's PDF Embed API for professional PDF viewing and **advanced intelligent document analysis** that finds related, contradictory, and supporting content across your entire document library.
