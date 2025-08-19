@@ -121,18 +121,12 @@ If you prefer to start services manually:
    cd backend
    ```
 
-2. Create a virtual environment (recommended):
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate  # Windows
-   ```
-
-3. Install Python dependencies:
+2. Install Python dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Start the FastAPI server:
+3. Start the FastAPI server:
    ```bash
    python main.py
    ```
@@ -172,6 +166,7 @@ If you prefer to start services manually:
    - Identifies related, supporting, and contradictory content
    - Generates intelligent snippets and insights
 4. **Navigate Instantly**: Click on any found snippet to jump directly to that section in the source document
+5. **Generate Podcast**: Click on the generate podcast option it generate the podcast.
 
 ### Intelligence Types
 
@@ -261,11 +256,29 @@ To extend this PDF viewer application, consider:
 9. **Version Control**: Track document versions and changes
 10. **Analytics**: Track document views and user interactions
 
+
+## Build and Run the Application by Docker
+From the project's root directory (the one containing frontend and backend), run the following command:
+
+ docker build -t adobe-round3 . 
+ docker run -p 8080:8080 --env-file backend/.env adobe-round3 
+These commands will:
+
+Build the Docker image for your backend server.
+Start the backend container, making it available at http://localhost:8080
+
+
 ## Troubleshooting
 
 - **CORS Issues**: Ensure the backend is running on port 8000 and frontend on port 3000
 - **API Connection**: Check that both servers are running and the API base URL is correct
 - **Dependencies**: Make sure all packages are installed correctly
+
+## Demo Video
+here is the demo video of the project
+
+https://youtu.be/XEmU8Nl5gr8?si=36tS8E_er9kRkeTn
+
 
 ## License
 
