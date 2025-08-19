@@ -20,7 +20,9 @@ const PDFViewer = ({ document: pdfDocument, onTextSelection, targetPage, onPageC
     
     // Adobe PDF Embed API Client ID
     const CLIENT_ID = process.env.REACT_APP_ADOBE_EMBED_API_KEY;
-
+    if(!CLIENT_ID) {
+      CLIENT_ID = 'ae5952821dde49729000b1970f609305'; // Fallback for local testing
+    }
     // Simple initialization without complex SDK loading
     async function initializePDFViewer() {
       try {
