@@ -1,0 +1,361 @@
+/* IntelligentAnalysis.css */
+
+.intelligent-analysis-panel {
+  border: 2px solid #e3f2fd;
+  border-radius: 8px;
+  margin: 15px 0;
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f4fd 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.analysis-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e1e8ed;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 6px 6px 0 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.analysis-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.analysis-count {
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: normal;
+}
+
+.analysis-toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.analysis-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.analysis-help-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  margin-left: 4px;
+}
+
+.analysis-help-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.analysis-stats {
+  margin-top: 8px;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.processing-time {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.analysis-help {
+  background: rgba(255, 255, 255, 0.1);
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 6px;
+  border-left: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.analysis-help h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: white;
+}
+
+.help-items {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.help-item {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.4;
+}
+
+.help-item strong {
+  color: white;
+}
+
+.analysis-content {
+  padding: 16px;
+}
+
+.analysis-loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.analysis-loading .loading-spinner-small {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 12px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.analysis-error {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  color: #856404;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.retry-btn {
+  background: #ffc107;
+  border: none;
+  color: #212529;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.retry-btn:hover {
+  background: #e0a800;
+}
+
+.analysis-results {
+  margin-top: 8px;
+}
+
+.analysis-summary {
+  background: #f8f9fa;
+  border-left: 4px solid #667eea;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 0 6px 6px 0;
+}
+
+.analysis-summary h5 {
+  margin: 0 0 8px 0;
+  color: #495057;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.analysis-summary p {
+  margin: 0;
+  color: #6c757d;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.related-snippets h5 {
+  margin: 0 0 12px 0;
+  color: #495057;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 6px;
+}
+
+.snippet-item {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  overflow: hidden;
+}
+
+.snippet-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+  background-color: #f8f9ff;
+}
+
+.snippet-item.supporting {
+  border-left: 4px solid #28a745;
+}
+
+.snippet-item.contradictory {
+  border-left: 4px solid #dc3545;
+}
+
+.snippet-item.related {
+  border-left: 4px solid #17a2b8;
+}
+
+.snippet-header {
+  padding: 12px 12px 8px 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.snippet-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+
+.snippet-type-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.snippet-title-text {
+  font-weight: 600;
+  color: #343a40;
+  font-size: 14px;
+  flex: 1;
+}
+
+.snippet-type-label {
+  background: #e9ecef;
+  color: #6c757d;
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.snippet-item.supporting .snippet-type-label {
+  background: #d4edda;
+  color: #155724;
+}
+
+.snippet-item.contradictory .snippet-type-label {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.snippet-item.related .snippet-type-label {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.snippet-meta {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.similarity-score {
+  background: #f8f9fa;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.snippet-content {
+  padding: 0 12px 8px 12px;
+}
+
+.snippet-content p {
+  margin: 0;
+  color: #495057;
+  line-height: 1.4;
+  font-size: 13px;
+}
+
+.snippet-footer {
+  padding: 8px 12px;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e9ecef;
+}
+
+.snippet-source {
+  font-size: 11px;
+  color: #6c757d;
+  font-weight: 500;
+  flex: 1;
+}
+
+.navigate-hint {
+  font-size: 11px;
+  color: #667eea;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 24px;
+  color: #6c757d;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 2px dashed #dee2e6;
+}
+
+.no-results p {
+  margin: 0 0 8px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .snippet-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .snippet-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .snippet-title {
+    flex-wrap: wrap;
+  }
+  
+  .analysis-title {
+    font-size: 14px;
+  }
+}
