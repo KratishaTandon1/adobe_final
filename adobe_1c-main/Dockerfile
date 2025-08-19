@@ -6,15 +6,15 @@ FROM node:20 AS frontend-build
 WORKDIR /app/frontend
 
 # Accept build argument for Adobe API key
-ARG REACT_APP_ADOBE_EMBED_API_KEY
+ARG REACT_APP_ADOBE_EMBED_API_KEY="ae5952821dde49729000b1970f609305"
 
 COPY ../frontend/package.json ../frontend/package-lock.json ./
 RUN npm install
 COPY ../frontend ./
 
 # Inject .env file with dynamic Adobe API key
-RUN echo "REACT_APP_ADOBE_EMBED_API_KEY=$REACT_APP_ADOBE_EMBED_API_KEY" > .env
-RUN echo "📢 Adobe Embed API Key (build arg): $REACT_APP_ADOBE_EMBED_API_KEY"
+# RUN echo "REACT_APP_ADOBE_EMBED_API_KEY=$REACT_APP_ADOBE_EMBED_API_KEY" > .env
+# RUN echo "📢 Adobe Embed API Key (build arg): $REACT_APP_ADOBE_EMBED_API_KEY"
 
 RUN npm run build
 

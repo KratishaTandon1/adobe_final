@@ -20,7 +20,8 @@ A full stack PDF viewer application with React frontend and FastAPI backend, fea
 - **💾 File Management**: Upload, view, and delete PDF documents
 - **🔒 Secure**: Files stored securely on the server
 - **⚡ Fast**: Real-time file uploads and instant viewing
-
+# Adobe Credentials
+ADOBE_EMBED_API_KEY="ae5952821dde49729000b1970f609305"
 ### 🧠 NEW: Intelligent Document Analysis
 - **🔍 Semantic Content Discovery**: Find related content across your entire document library
 - **⚠️ Contradictory Content Detection**: Identify conflicting information and different viewpoints
