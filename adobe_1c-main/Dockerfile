@@ -13,7 +13,7 @@ RUN npm install
 COPY ../frontend ./
 
 # Inject .env file with dynamic Adobe API key
-RUN echo "REACT_APP_ADOBE_EMBED_API_KEY=$ADOBE_EMBED_API_KEY" > .env
+RUN echo "REACT_APP_ADOBE_EMBED_API_KEY=$REACT_APP_ADOBE_EMBED_API_KEY" > .env
 
 RUN npm run build
 

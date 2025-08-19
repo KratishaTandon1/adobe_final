@@ -47,6 +47,7 @@ const PDFViewer = ({ document: pdfDocument, onTextSelection, targetPage, onPageC
 
         try {
           // Create Adobe DC View instance with better error handling
+          console.log(CLIENT_ID);
           adobeDCViewRef.current = new window.AdobeDC.View({
             clientId: CLIENT_ID,
             divId: viewerRef.current.id,
