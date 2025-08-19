@@ -19,7 +19,7 @@ const PDFViewer = ({ document: pdfDocument, onTextSelection, targetPage, onPageC
     console.log("✅ Both pdfDocument and viewerRef are available, proceeding with Adobe PDF setup");
     
     // Adobe PDF Embed API Client ID
-    const CLIENT_ID = process.env.REACT_APP_ADOBE_EMBED_API_KEY;
+    var CLIENT_ID = process.env.REACT_APP_ADOBE_EMBED_API_KEY;
     if(!CLIENT_ID) {
       CLIENT_ID = 'ae5952821dde49729000b1970f609305'; // Fallback for local testing
     }
